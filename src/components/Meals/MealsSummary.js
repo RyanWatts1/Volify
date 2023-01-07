@@ -3,15 +3,16 @@ import classes from "./MealsSummary.module.css";
 const MealsSummary = () => {
   return (
     <section className={classes.summary}>
-      <h2>Delicious Food, Delivered To You</h2>
+      <h2>Bring design to your home office</h2>
       <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
+        At Volify, we are a team of designers and creators who are passionate
+        about helping people work and live their best lives through the use of
+        sleek, modern, and minimal home office accessories. We believe that good
+        design and functionality go hand in hand, and strive to create products
+        that are not only aesthetically pleasing, but also enhance productivity
+        and well-being.
       </p>
-      <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
-      </p>
+
     </section>
   );
 };
