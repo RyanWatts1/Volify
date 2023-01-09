@@ -11,19 +11,19 @@ const DUMMY_TECH = [
   },
   {
     id: "m2",
-    name: "Desk Mat",
-    description: "A wool desk mat!",
+    name: "Wool Desk Mat",
+    description: "Authentic wool dark charcoal mat ",
     price: 49.5,
   },
   {
     id: "m3",
     name: "MagSafe wooden Charger",
-    description: "wooden ultra chrager",
+    description: "Dark Oak 20W fast chrager",
     price: 45.99,
   },
   {
     id: "m4",
-    name: "M3 Charger",
+    name: "M3 Neo Charger",
     description: "Matrix speed charging cabel",
     price: 88.99,
   },
