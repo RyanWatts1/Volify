@@ -2,10 +2,10 @@ import Card from "../UI/Card";
 import TechItem from "./TechItem/TechItem";
 import classes from "./AvailableTech.module.css";
 
-const DUMMY_MEALS = [
+const DUMMY_TECH = [
   {
     id: "m1",
-    name: "Mac Pro Vertical Stand",
+    name: "Mac Book Pro Vertical Stand",
     description: "Ultra Sleek Space Grey Stand",
     price: 99.95,
   },
@@ -30,20 +30,20 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableTech = () => {
-  const mealsList = DUMMY_MEALS.map((meal) => (
+  const techList = DUMMY_TECH.map((tech) => (
     <TechItem
-      id={meal.id}
-      key={meal.id}
-      name={meal.name}
-      description={meal.description}
-      price={meal.price}
+      id={tech.id}
+      key={tech.id}
+      name={tech.name}
+      description={tech.description}
+      price={tech.price}
     />
   ));
 
   return (
-    <section className={classes.meals}>
+    <section className={classes.tech}>
       <Card>
-        <ul>{mealsList}</ul>
+        <ul>{techList}</ul>
       </Card>
     </section>
   );
