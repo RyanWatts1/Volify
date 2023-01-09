@@ -1,6 +1,6 @@
 import Card from "../UI/Card";
-import MealItem from "./MealItem/MealItem";
-import classes from "./AvailableMeals.module.css";
+import TechItem from "./TechItem/TechItem";
+import classes from "./AvailableTech.module.css";
 
 const DUMMY_MEALS = [
   {
@@ -29,9 +29,9 @@ const DUMMY_MEALS = [
   },
 ];
 
-const AvailableMeals = () => {
+const AvailableTech = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
-    <MealItem
+    <TechItem
       id={meal.id}
       key={meal.id}
       name={meal.name}
@@ -49,4 +49,4 @@ const AvailableMeals = () => {
   );
 };
 
-export default AvailableMeals;
+export default AvailableTech;
