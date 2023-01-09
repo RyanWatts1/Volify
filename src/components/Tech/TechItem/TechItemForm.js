@@ -1,7 +1,7 @@
 import Input from "../../UI/Input";
-import classes from "./MealItemForm.module.css";
+import classes from "./TechItemForm.module.css";
 
-const MealItemForm = (props) => {
+const TechItemForm = (props) => {
   return (
     <form className={classes.form}>
       <Input
@@ -20,4 +20,4 @@ const MealItemForm = (props) => {
   );
 };
 
-export default MealItemForm;
+export default TechItemForm;

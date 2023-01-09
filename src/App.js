@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 
 import Header from "./components/Layout/Header";
-import Meals from "./components/Meals/Meals";
+import Tech from "./components/Tech/Tech";
 import Cart from "./components/Cart/Cart";
 
 function App() {
@@ -11,17 +11,16 @@ function App() {
     setCartIsShown(true);
   };
 
-
   const hideCartHandler = () => {
     setCartIsShown(false);
   };
 
   return (
     <Fragment>
-      { cartIsShown && <Cart />}
-      <Header onShowCart={showCartHandler}/>
+      {cartIsShown && <Cart />}
+      <Header />
       <main>
-        <Meals />
+        <Tech />
       </main>
     </Fragment>
   );

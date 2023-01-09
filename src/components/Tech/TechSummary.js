@@ -1,6 +1,6 @@
-import classes from "./MealsSummary.module.css";
+import classes from "./TechSummary.module.css";
 
-const MealsSummary = () => {
+const TechSummary = () => {
   return (
     <section className={classes.summary}>
       <h2>Bring design to your home office</h2>
@@ -17,4 +17,4 @@ const MealsSummary = () => {
   );
 };
 
-export default MealsSummary;
+export default TechSummary;
