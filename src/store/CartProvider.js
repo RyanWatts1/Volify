@@ -3,7 +3,7 @@ import CartContext from "./cart-context";
 const CartProvider = (props) => {
   const AddItemToCartHandler = (item) => {};
 
-  const removeItemFromCartHandler = (is) => {};
+  const removeItemFromCartHandler = (id) => {};
 
   const cartContext = {
     items: [],
@@ -13,9 +13,9 @@ const CartProvider = (props) => {
   };
 
   return (
-    <CartContext.Provder value={cartContext}>
+    <CartContext.Provider value={cartContext}>
       {props.children}
-    </CartContext.Provder>
+    </CartContext.Provider>
   );
 };
 
