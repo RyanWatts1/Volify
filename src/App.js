@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 import Header from "./components/Layout/Header";
 import Tech from "./components/Tech/Tech";
@@ -17,13 +17,13 @@ function App() {
   };
 
   return (
-    <CartProvider>
+    <Fragment>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
         <Tech />
       </main>
-    </CartProvider>
+    </Fragment>
   );
 }
 
