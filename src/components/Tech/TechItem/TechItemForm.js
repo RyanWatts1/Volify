@@ -4,7 +4,9 @@ import Input from "../../UI/Input";
 import classes from "./TechItemForm.module.css";
 
 const TechItemForm = (props) => {
+
   const [amountIsValid, setAmountIsValid] = useState(true);
+
   const amountInputRef = useRef();
 
   const submitHandler = (event) => {
@@ -12,7 +14,6 @@ const TechItemForm = (props) => {
 
     const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
-
     if (
       enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
@@ -21,8 +22,7 @@ const TechItemForm = (props) => {
       setAmountIsValid(false);
       return;
     }
-
-    props.onAddToCart(enteredAmountNumber)
+    props.onAddToCart(enteredAmountNumber);
   };
 
   return (
@@ -40,7 +40,7 @@ const TechItemForm = (props) => {
         }}
       />
       <button>+ Add</button>
-      {!amountIsValid && <p>Please Enter a valid amount (1-5). </p>}
+      {!amountIsValid && <p>Please enter valid </p>}
     </form>
   );
 };
