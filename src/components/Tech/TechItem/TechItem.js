@@ -12,7 +12,7 @@ const TechItem = (props) => {
         <div className={classes.price}>{price}</div>
       </div>
       <div>
-        <TechItemForm id={props.id} />
+        <TechItemForm  /> 
       </div>
     </li>
   );
