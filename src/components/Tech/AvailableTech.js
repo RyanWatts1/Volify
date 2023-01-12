@@ -32,8 +32,8 @@ const DUMMY_TECH = [
 const AvailableTech = () => {
   const techList = DUMMY_TECH.map((tech) => (
     <TechItem
-      id={tech.id}
       key={tech.id}
+      id={tech.id}
       name={tech.name}
       description={tech.description}
       price={tech.price}

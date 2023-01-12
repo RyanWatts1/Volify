@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import CartProvider from "./store/CartProvider";
 import Header from "./components/Layout/Header";
 import Tech from "./components/Tech/Tech";
 import Cart from "./components/Cart/Cart";
+import CartProvider from "./store/CartProvider";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
