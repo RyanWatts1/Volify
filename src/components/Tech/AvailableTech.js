@@ -40,6 +40,7 @@ const AvailableTech = () => {
       price={tech.price}
     />
   ));
+  console.log("hello Rob");
 
   return (
     <section className={classes.tech}>
