@@ -7,7 +7,7 @@ const DUMMY_TECH = [
   {
     id: "m1",
     name: "Mac Book Pro Vertical Stand",
-    description: "Ultra Sleek Space Grey Stand",
+    description: "Ultra sleek space grey stand",
     price: 99.95,
   },
   {
@@ -19,7 +19,7 @@ const DUMMY_TECH = [
   {
     id: "m3",
     name: "MagSafe wooden Charger",
-    description: "Dark Oak 20W fast chrager",
+    description: "Dark oak 20W fast chrager",
     price: 45.99,
   },
   {
