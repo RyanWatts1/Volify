@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import TechItemForm from "./TechItemForm";
 import classes from "./TechItem.module.css";
-import CartContext from "../../../store/cart-context";
+import CartContext from "../../../../store/cart-context";
 
 const TechItem = (props) => {
   const cartCtx = useContext(CartContext);
@@ -26,7 +26,7 @@ const TechItem = (props) => {
         <div className={classes.price}>{price}</div>
       </div>
       <div>
-        <TechItemForm onAddToCart={addToCartHandler}/>
+        <TechItemForm onAddToCart={addToCartHandler} />
       </div>
     </li>
   );
