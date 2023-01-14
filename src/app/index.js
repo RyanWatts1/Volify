@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 import Header from "./components/Layout/Header";
-import Tech from "./components/Tech/Tech";
-import Cart from "./components/Cart/Cart";
+import Tech from "../tech";
+import Cart from "../cart";
 import { CartProvider } from "./contexts/cart-context";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -18,11 +19,16 @@ function App() {
 
   return (
     <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} />
-      <main>
-        <Tech />
-      </main>
+      <BrowserRouter>
+        <main>
+          {cartIsShown && <Cart onClose={hideCartHandler} />}
+          <Header onShowCart={showCartHandler} />
+          <Routes>
+            <Route path="/" element={<Tech />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
     </CartProvider>
   );
 }
