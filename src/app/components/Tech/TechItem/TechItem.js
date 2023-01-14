@@ -1,16 +1,15 @@
-import { useContext } from "react";
-
 import TechItemForm from "./TechItemForm";
 import classes from "./TechItem.module.css";
-import CartContext from "../../../../store/cart-context";
+import { useCart } from "../../../contexts/cart-context";
 
 const TechItem = (props) => {
-  const cartCtx = useContext(CartContext);
+  const { addItemToCart } = useCart();
 
   const price = `$${props.price.toFixed(2)}`;
 
   const addToCartHandler = (amount) => {
-    cartCtx.addItem({
+    console.log("amount", amount, "props", props);
+    addItemToCart({
       id: props.id,
       name: props.name,
       amount: amount,

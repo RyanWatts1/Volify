@@ -1,7 +1,6 @@
 import Card from "../UI/Card";
 import TechItem from "./TechItem/TechItem";
 import classes from "./AvailableTech.module.css";
-import { toBeChecked } from "@testing-library/jest-dom/dist/matchers";
 
 const DUMMY_TECH = [
   {
@@ -34,7 +33,7 @@ const AvailableTech = () => {
   const techList = DUMMY_TECH.map((tech) => (
     <TechItem
       key={tech.id}
-      id={toBeChecked.id}
+      id={tech.id}
       name={tech.name}
       description={tech.description}
       price={tech.price}
